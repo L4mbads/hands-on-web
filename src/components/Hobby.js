@@ -1,8 +1,24 @@
 import React from "react";
-import { images } from "../photography";
 import { useState } from 'react';
 import Arrow from "../assets/arrow.png";
 import "./Hobby.css";
+import image1 from "../assets/photography/1.png";
+import image2 from "../assets/photography/2.png";
+import image3 from "../assets/photography/3.png";
+import image4 from "../assets/photography/4.png";
+import image5 from "../assets/photography/5.png";
+import image6 from "../assets/photography/6.png";
+import image7 from "../assets/photography/7.png";
+
+export const images = [
+    image1,
+    image2,
+    image3,
+    image4,
+    image5,
+    image6,
+    image7,
+]
 
 function mod(n, m) {
     // negative modulo fix
@@ -20,7 +36,7 @@ function ImagesComponent() {
     return (
         <div className="imageContainer relative container mx-auto aspect-[2.39/1]">
             <img
-                src={images[selectedImage].image}
+                src={images[selectedImage]}
                 className="imageObject object-cover">
 
             </img>
@@ -60,7 +76,7 @@ export default function Hobby() {
                         Shots taken in cinematic aspect ratio (2.39:1)
                     </p>
                 </div>
-                <div className="flex flex-col w-full mt-20 mb-20">
+                <div className="flex flex-col w-full mt-20">
                     <p className="mx-auto leading-relaxed text-base lg:text-lg text-justify">
                         I use shaders and textures that make use of
                         <a href="https://en.wikipedia.org/wiki/Physically_based_rendering" className="text-green-500 hover:text-green-900"> Physically Based Rendering</a>
