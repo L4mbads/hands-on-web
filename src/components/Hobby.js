@@ -9,6 +9,9 @@ import image4 from "../assets/photography/4.png";
 import image5 from "../assets/photography/5.png";
 import image6 from "../assets/photography/6.png";
 import image7 from "../assets/photography/7.png";
+import winner1 from "../assets/photography/winner1.png";
+import winner2 from "../assets/photography/winner2.png";
+import winner3 from "../assets/photography/winner3.png";
 
 export const images = [
     image1,
@@ -83,6 +86,67 @@ export default function Hobby() {
                         <b> (PBR)</b> system, which allows realistic light behaviour within the game.
                         This inspires me to delve deeper into graphics programming world,
                         mainly focused on light transport.
+                    </p>
+                </div>
+                <div className="imageContainer relative container mx-auto mt-20 aspect-video">
+                    <img
+                        src={winner1}
+                        className="imageObject object-cover">
+
+                    </img>
+                </div>
+
+                <div className="flex flex-col w-full my-2">
+                    <p className="mx-auto leading-relaxed text-xs sm:text-sm text-gray-500">
+                        This shot wins me in my first ever screenshot contest!
+                    </p>
+                </div>
+                <div className="flex flex-col w-full mt-5 md:mt-10 pb-5 md:pb-10">
+                    <p className="mx-auto leading-relaxed text-base lg:text-lg text-justify">
+                        After a few days experimenting with my newfound hobby, I decided to join my first ever screenshot contest.
+                        And surprisingly, my shot got placed in top 3 based by voting!
+                    </p>
+                </div>
+                <div className="imageContainer relative container mx-auto mt-20 aspect-video">
+                    <img
+                        src={winner2}
+                        className="imageObject object-cover">
+
+                    </img>
+                </div>
+                <div className="flex flex-col w-full my-2">
+                    <p className="mx-auto leading-relaxed text-xs sm:text-sm text-gray-500">
+                        This one also wins me in my second contest!
+                    </p>
+                </div>
+                <div className="flex flex-col w-full mt-5 md:mt-10 pb-5 md:pb-10">
+                    <p className="mx-auto leading-relaxed text-base lg:text-lg text-justify">
+                        In my second contest, i tried to go very different than my usual style.
+                        I tried to capture an old-vintage look with the post processing.
+                        I'm so glad my shot got in top 3!
+                    </p>
+                </div>
+
+
+                <div className="imageContainer relative container mx-auto mt-20 aspect-video">
+                    <img
+                        src={winner3}
+                        className="imageObject object-cover">
+
+                    </img>
+                </div>
+
+                <div className="flex flex-col w-full my-2">
+                    <p className="mx-auto leading-relaxed text-xs sm:text-sm text-gray-500">
+                        And this one also wins me in my last contest!
+                    </p>
+                </div>
+                <div className="flex flex-col w-full mt-5 md:mt-10 ">
+                    <p className="mx-auto leading-relaxed text-base lg:text-lg text-justify">
+                        And finally in my latest contest, I managed to get the first place!
+                        The theme of the contest was like small room, and suddenly my mind
+                        just thought of an abandoned-apocalyptic kind of room. So i actually
+                        did build the room there on my own. It was really fun.
                     </p>
                 </div>
 
