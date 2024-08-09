@@ -1,8 +1,37 @@
 import React from "react";
+import { useState } from 'react';
+import shader1 from "../assets/projects/shader1.png";
+import shader2 from "../assets/projects/shader2.png";
+import shader3 from "../assets/projects/shader3.png";
 
-import shader from "../assets/projects/shader.png";
 
+function mod(n, m) {
+    // negative modulo fix
+    return ((n % m) + m) % m;
+}
 
+const shaderImages = [
+    shader1,
+    shader2,
+    shader3,
+
+];
+
+function ImagesComponent(props) {
+    const [selectedImage, setImage] = useState(0);
+    const nextImage = () => {
+        setImage(mod(selectedImage + 1, props.images.length));
+    }
+    return (
+        <img
+            src={props.images[selectedImage]}
+            alt="Example"
+            className="aspect-video lg:aspect-square lg:w-1/2 lg:h-auto object-cover mb-4 lg:mb-0"
+            onClick={nextImage}
+        />
+    )
+
+}
 
 export default function Projects() {
     return (
@@ -21,14 +50,10 @@ export default function Projects() {
 
             </div>
             <div className="flex flex-col lg:flex-row items-center lg:items-start justify-between bg-white">
-                <img
-                    src={shader}
-                    alt="Example"
-                    className="w-full h-32 lg:w-1/2 lg:h-auto object-cover mb-4 lg:mb-0"
-                />
+                <ImagesComponent images={shaderImages} />
                 <div className="w-full lg:w-2/3 p-8 ">
                     <h2 className="text-2xl font-bold text-black">Minecraft Raytraced Shader</h2>
-                    <p className="mt-8 text-lg text-gray-600 text-justify">
+                    <p className="mt-8 text-lg text-gray-600 xl:max-h-full max-h-96 overflow-y-auto text-justify">
                         A real-time raytraced shader with photorealistic lighting including
                         world-space diffuse lighting and reflection,
                         made possible with temporal resampling and a spatio-temporal filter,
@@ -37,25 +62,16 @@ export default function Projects() {
                         more.
                         <br />
                         <br />
+                        Thanks to Iris Shaders mod,
+                        I didn't have to mess with the internal Minecraft rendering pipeline and instead,
+                        let Iris Shaders inject the GLSL code into Minecraft.
+
                         Sadly, the language which Minecraft is coded in, Java,
                         makes it not possible for us to use hardware acceleration RT.
                         <br />
                         <br />
                         Nevertheless, it was a huge experience for me because i learnt a lot
                         of thing regarding real-time PBR rendering.
-                    </p>
-                </div>
-            </div>
-            <div className="flex flex-col lg:flex-row-reverse items-center lg:items-start justify-between bg-gray-900">
-                <img
-                    src={shader}
-                    alt="Example"
-                    className="w-full h-32 lg:w-1/2 lg:h-auto object-cover mb-4 lg:mb-0"
-                />
-                <div className="w-full lg:w-2/3 p-4 h-auto">
-                    <h2 className="text-2xl font-bold">This is the Heading</h2>
-                    <p className="mt-2 text-gray-600">
-                        This is some example text that sits below the image on small screens. On larger screens, the text will be beside the image.
                     </p>
                 </div>
             </div>
