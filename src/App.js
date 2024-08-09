@@ -3,6 +3,7 @@ import React from 'react';
 import About from "./components/About";
 import Hobby from "./components/Hobby";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <About />
       <Hobby />
       <Projects />
+      <Contact />
     </main>
   )
 }

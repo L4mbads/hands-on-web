@@ -98,7 +98,7 @@ export default function Projects() {
                         Embark on an epic journey to become the next generation leader of Idgafnesia and continue to maintain peace and harmony on this planet!
                         <br />
                         <br />
-                        The game was developed only in a single week by sucipto team in Unity. Our good team discipline and teamwork was what
+                        The game was developed only in a single week by sucipto team in Unity using <b>C#</b>. Our good team discipline and teamwork was what
                         made this possible.
                         <br />
                         <br />
