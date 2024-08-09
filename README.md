@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Web Portofolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projek ini dibuat untuk menyelesaikan tugas _career path_ SPARTA 2023\
+Projek dibuat dengan **React** dan **Tailwind CSS**
 
-## Available Scripts
+## Cara menjalankan
 
-In the project directory, you can run:
+Jalankan `npm start` di terminal di direktori file ini
 
-### `npm start`
+## Bonus
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ### Deployment ( Tidak ❌ )
+Sampai saat README ini diubah, belum ada rencana untuk melakukan deployment.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- ### Tampilan yang Responsif ( Selesai ✅ )
+Kode dibuat dengan _mindset_ tampilan responsif.
 
-### `npm test`
+- ### Penggunaan Basis Data/CMS ( Tidak ❌ )
+Belum mengerti dan waktu terlalu singkat untuk mencoba
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ### Kreativitas ( Selesai ✅ )
+Tampilan dan desain website sudah dibuat dengan sekreatif mungkin.
 
-### `npm run build`
+## Kesulitan
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Saya tidak pernah membuat projek dengan **React** dan **Tailwind CSS** sebelumnya, jadi agak kesusahan saat pertama kali memakainya.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Identitas
+Fachriza Ahmad Setiyono\
+19623045\
+IF Jatinangor 23\
+Klan L
