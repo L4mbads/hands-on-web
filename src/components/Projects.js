@@ -3,9 +3,11 @@ import { useState } from 'react';
 import shader1 from "../assets/projects/shader1.png";
 import shader2 from "../assets/projects/shader2.png";
 import shader3 from "../assets/projects/shader3.png";
+import shader4 from "../assets/projects/shader4.png";
 import game1 from "../assets/projects/game1.png";
 import game2 from "../assets/projects/game2.png";
 import game3 from "../assets/projects/game3.png";
+import { ReactComponent as ItchIo } from "../assets/itch-io.svg";
 
 
 function mod(n, m) {
@@ -17,6 +19,7 @@ const shaderImages = [
     shader1,
     shader2,
     shader3,
+    shader4,
 
 ];
 
@@ -44,8 +47,8 @@ function ImagesComponent(props) {
 
 export default function Projects() {
     return (
-        <section id="projects" className="text-gray-400 body-font">
-            <div className=" py-20 text-center bg-slate-950 ">
+        <section id="projects" className="body-font">
+            <div className=" py-20 text-center">
                 <div className="flex flex-col w-full mb-2">
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
                         Projects
@@ -62,7 +65,7 @@ export default function Projects() {
                 <div className="w-full lg:w-1/2 p-8 ">
                     <h2 className="text-2xl font-bold text-black">Minecraft Raytraced Shader</h2>
                     <p className="mt-8 text-lg text-gray-600 text-justify">
-                        A real-time raytraced shader with photorealistic lighting including
+                        A real-time <b>raytraced</b> shader with photorealistic lighting including
                         world-space diffuse lighting and reflection,
                         made possible with temporal resampling and a spatio-temporal filter,
                         combined with a fast irradiance estimation. Along with other features
@@ -72,8 +75,8 @@ export default function Projects() {
                         <br />
                         Thanks to Iris Shaders mod,
                         I didn't have to mess with the internal Minecraft rendering pipeline and instead,
-                        let Iris Shaders inject the GLSL code into Minecraft.
-                        Sadly, the language Minecraft is coded in, Java,
+                        let Iris Shaders inject the <b>GLSL</b> code into Minecraft.
+                        Sadly, the language where Minecraft is coded in, Java,
                         makes it not possible to use hardware acceleration RT.
                         <br />
                         <br />
@@ -87,18 +90,22 @@ export default function Projects() {
                 <div className="w-full lg:w-1/2 p-8 ">
                     <h2 className="text-2xl font-bold text-white">Democrussy</h2>
                     <p className="mt-8 text-lg text-gray-400 text-justify">
-                        The GIMJAM 2024 1st place winner, Democrussy is a strategy-card game mixed with some visual novel element to better narrate its epic storyline.
+                        The <a href="https://itch.io/jam/gimjam-2024" className="text-blue-500 hover:text-blue-200"><b>GIMJAM 2024</b></a> 1st place winner, Democrussy is a strategy-card game mixed with some visual novel element to better narrate its epic storyline.
                         <br />
                         <br />
-                        In a galaxy far, far away--namely, Susu Kotak Galaxy... After a massive land dispute between the citizens of planet Idgafnesia, Warlok and Magna-Aim, a prophecy has been foretold by a Dukun that ended this major conflict.
-                        "A worthy leader shall be born in the highest peak of Idgafnesia, and they shall bring all conflict to an end" said the Dukun before he vanished.
-                        You ARE the prophecy. Show the citizens of Idgafnesia that you are worthy!
+                        The game unfolds the story after a massive land dispute between the citizens of planet Idgafnesia, Warlok and Magna-Aim.
+                        A prophecy foretold a worthy leader shall end the conflict.
                         Embark on an epic journey to become the next generation leader of Idgafnesia and continue to maintain peace and harmony on this planet!
-                        Developed in Unity
                         <br />
                         <br />
-                        The game was developed only in a single week by sucipto team. Our good team discipline and teamwork is what
-                        has made this possible.
+                        The game was developed only in a single week by sucipto team in Unity. Our good team discipline and teamwork was what
+                        made this possible.
+                        <br />
+                        <br />
+                        <a href="https://l4mbads.itch.io/democrussy" className="text-white bg-rose-800 hover:bg-rose-900/90 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-2.5 py-2.5 text-center inline-flex items-center me-2 mb-2">
+                            <ItchIo className="w-8 h-8"></ItchIo>
+                            <p className="mx-2">Try the game on itch.io!</p>
+                        </a>
 
                     </p>
                 </div>

@@ -6,7 +6,7 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <main className="text-gray-400 bg-gray-900">
+    <main className="text-gray-400 bg-gray-950">
       <About />
       <Hobby />
       <Projects />

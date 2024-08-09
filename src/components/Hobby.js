@@ -28,13 +28,13 @@ function ImagesComponent() {
                 src={Arrow}
                 alt="next"
                 onClick={nextImage}
-                className="imageButton absolute right-0 size-1/12 rotate-180 object-scale-down  ">
+                className="imageButton opacity-50 hover:opacity-100 absolute right-0 size-1/12 rotate-180 object-scale-down  ">
             </img>
             <img
                 src={Arrow}
                 alt="prev"
                 onClick={prevImage}
-                className="imageButton absolute left-0 size-1/12 object-scale-down  ">
+                className="imageButton opacity-50 hover:opacity-100 absolute left-0 size-1/12 object-scale-down  ">
             </img>
         </div >
     )
@@ -43,7 +43,7 @@ function ImagesComponent() {
 
 export default function Hobby() {
     return (
-        <section id="hobby" className="text-gray-400 bg-gray-900 body-font">
+        <section id="hobby" className="text-gray-400 bg-gray-950 body-font">
             <div className="container px-5 py-20 mx-auto text-center lg:px-40">
                 <div className="flex flex-col w-full mb-20">
                     <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
